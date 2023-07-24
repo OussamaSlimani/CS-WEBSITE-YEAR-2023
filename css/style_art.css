@@ -1,0 +1,46 @@
+.container-xxl {
+    border:1px solid #ddd;
+}
+
+.title {
+    font-size: 200%;
+    text-transform:uppercase;
+    color: red;
+}
+
+.news-container{
+    margin:20px;
+    padding:20px;
+    transform: scale(0.99);
+    text-align: left;
+    transition: all 0.4s;
+}
+
+.news-container:hover{
+    box-shadow: #ccc 0px 0px 3px 5px;
+    transform: scale(1.01);
+}
+
+.news-container .heading{
+    font-size: 155%;
+    margin-bottom: 20px;
+    color: rgb(6, 6, 111);
+}
+
+.news-container .news{    
+    text-align: justify;
+    column-gap: 50px;
+    column-rule: 3px solid #ccc;
+}
+
+.news-container .news img {
+    width:100%;
+}
+
+.news.col-2 {
+    column-count: 2;
+}
+
+.news.col-3 {
+    column-count: 3;
+}
