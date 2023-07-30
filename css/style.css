@@ -133,7 +133,7 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand img {
-        max-height: 45px;
+        max-height: 50px;
     }
 
     .navbar .navbar-nav {
@@ -421,53 +421,6 @@
 }
 
 
-/*** Testimonial 
-.testimonial-carousel .owl-item .testimonial-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-    border: 1px solid transparent;
-    transform: scale(.85);
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    box-shadow: none;
-    border-color: var(--primary);
-    transform: scale(1);
-}
-
-.testimonial-carousel .owl-item .testimonial-item img {
-    width: 50px;
-    height: 50px;
-}
-
-.testimonial-carousel .owl-nav {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    margin: 0 12px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-    border-radius: 45px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-    color: #FFFFFF;
-    background: var(--primary);
-}
-*/
-
-
 /*** Testimonial ***/
 
 .testimonial-carousel .owl-item .testimonial-item img {
@@ -573,178 +526,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-/* .portfolio #portfolio-flters {
-    padding: 0;
-    margin: 0 auto 25px auto;
-    list-style: none;
-    text-align: center;
-    background: white;
-    border-radius: 50px;
-    padding: 2px 15px;
-  }
-   */
-/* .portfolio #portfolio-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 20px 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1;
-    color: #444444;
-    margin: 0 4px 8px 4px;
-    transition: 0.3s;
-    border-radius: 50px;
-    border: 1px solid #fff;
-  } */
-
-
-/* .portfolio #portfolio-flters li:last-child {
-    margin-right: 0;
-  } */
-
-/* .portfolio .portfolio-wrap {
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.75);
-  } */
-
-/* .portfolio .portfolio-wrap::before {
-    content: "";
-    background: rgba(255, 255, 255, 0.75);
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    top: 30px;
-    bottom: 30px;
-    transition: all ease-in-out 0.3s;
-    opacity: 0;
-  } */
-
-/* .portfolio .portfolio-wrap img {
-    transition: 1s;
-  } */
-
-/* .portfolio .portfolio-wrap .portfolio-info {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    transition: all ease-in-out 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
-
-/* .portfolio .portfolio-wrap .portfolio-info::before {
-    display: block;
-    content: "";
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    top: 35px;
-    left: 35px;
-    border-top: 3px solid rgba(1, 41, 112, 0.2);
-    border-left: 3px solid rgba(1, 41, 112, 0.2);
-    transition: all 0.5s ease 0s;
-  } */
-
-/* .portfolio .portfolio-wrap .portfolio-info::after {
-    display: block;
-    content: "";
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    bottom: 35px;
-    right: 35px;
-    border-bottom: 3px solid rgba(1, 41, 112, 0.2);
-    border-right: 3px solid rgba(1, 41, 112, 0.2);
-    transition: all 0.5s ease 0s;
-  } */
-
-/* .portfolio .portfolio-wrap .portfolio-info h4 {
-    font-size: 20px;
-    color: #012970;
-    font-weight: 700;
-  } */
-
-/* .portfolio .portfolio-wrap .portfolio-info p {
-    color: #012970;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-  } */
-
-/* .portfolio .portfolio-wrap .portfolio-links {
-    text-align: center;
-  }
-  
-  .portfolio .portfolio-wrap .portfolio-links a {
-    color: #fff;
-    background: #4154f1;
-    margin: 10px 2px;
-    width: 36px;
-    height: 36px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: 0.3s;
-  } */
-
-/* .portfolio .portfolio-wrap .portfolio-links a i {
-    font-size: 24px;
-    line-height: 0;
-  }
-  
-  .portfolio .portfolio-wrap .portfolio-links a:hover {
-    background: #5969f3;
-  }
-  
-  .portfolio .portfolio-wrap:hover img {
-    transform: scale(1.1);
-  }
-   */
-/* .portfolio .portfolio-wrap:hover::before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
-  }
-  
-  .portfolio .portfolio-wrap:hover .portfolio-info {
-    opacity: 1;
-  }
-  
-  .portfolio .portfolio-wrap:hover .portfolio-info::before {
-    top: 15px;
-    left: 15px;
-  }
-  
-  .portfolio .portfolio-wrap:hover .portfolio-info::after {
-    bottom: 15px;
-    right: 15px;
-  } */
 /*** Project Portfolio ***/
 #portfolio-flters li {
     display: inline-block;
@@ -761,60 +542,17 @@
     border-color: var(--primary);
 }
 
-/* .portfolio-inner {
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-} */
-
 .portfolio-inner {
     border: 1px solid rgba(1, 41, 112, 0.2);
 }
 
 
-/* .portfolio-inner img {
-    transition: .5s;
-} */
 
 .portfolio-inner:hover img {
     transform: scale(1.1);
 }
 
-/* .portfolio-inner .portfolio-text {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -50px;
-    opacity: 0;
-    transition: .5s;
-} */
-
 
 .READ-MORE {
     cursor: pointer;
-}
-
-/* Additional CSS styles to fix overlapping issues */
-
-/* Flexbox layout for the projects section */
-#projects .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    /* Adjust the gap between items */
-}
-
-/* Margin between last row in the projects section and the next section */
-#projects {
-    margin-bottom: 50px;
-    /* Adjust the margin as needed */
-}
-
-/* Margin between the two sections */
-.container-xxl {
-    margin-top: 50px;
-    /* Adjust the margin as needed */
-    margin-bottom: 50px;
-    /* Adjust the margin as needed */
 }

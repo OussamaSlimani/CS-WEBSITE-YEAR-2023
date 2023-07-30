@@ -80,6 +80,7 @@
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)
 }
 
 .navbar .navbar-brand img {
@@ -89,7 +90,7 @@
 .navbar .navbar-nav .nav-link {
     margin-left: 25px;
     padding: 10px 0;
-    color: #696E77;
+    color: #16607D;
     font-weight: 400;
     outline: none;
 }
@@ -110,7 +111,7 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand img {
-        max-height: 45px;
+        max-height: 50px;
     }
 
     .navbar .navbar-nav {

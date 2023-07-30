@@ -44,7 +44,7 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-4">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <img class="img-fluid me-3" src="img/LOGO-02.png" alt="">
         </a>
@@ -55,7 +55,7 @@
             <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
                 <a href="#carousel" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <a href="#about" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
                     <div class="dropdown-menu bg-light border-0 m-0">
                         <a href="#about" class="dropdown-item">History</a>
                         <a href="#number" class="dropdown-item">Statistics</a>
@@ -97,7 +97,7 @@
                                         CHAPTER ENIS STUDENT BRANCH.</h1>
                                     <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Together towards a
                                         healthier tomorrow, with care, compassion, and community.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More
+                                    <a href="#about" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More
                                     </a>
                                 </div>
                             </div>
@@ -114,7 +114,8 @@
                                         - COMPUTER SOCIETY.</h1>
                                     <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Nurturing
                                         innovation, empowering dreams, and unlocking boundless possibilities.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
+                                    <a href="#about" class="btn btn-primary py-3 px-5 animated slideInDown">Explore
+                                        More</a>
                                 </div>
                             </div>
                         </div>
@@ -1232,7 +1233,7 @@
     <!-- ============= Projects End ============ -->
 
     <!-- unit Start -->
-    <div class="container-xxl pt-5">
+    <div id="unit" class="container-xxl pt-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -1374,7 +1375,7 @@
                         <img class="flex-shrink-0 rounded-circle border p-1" src="img/Experience/ss-08.jpg" alt="">
                         <div class="ms-4">
                             <h5 class="mb-1">Chaima Abdelkefi</h5>
-                            <span>Data Engineer</span>
+                            <span>Data Engineer and Ex CS Chairwoman</span>
                         </div>
                     </div>
                     <p class="mb-0">Being the chairwoman of the IEEE Computer Society ENIS SBC has been one of the most
@@ -1449,8 +1450,8 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Route Soukra km 3 B.P. 1173. Sfax. 3038, Tunisia</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>28 675 568</p>
+                    <p><i class="fa fa-envelope me-3"></i>mahdi.bradai21@ieee.org</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">About us</h5>
@@ -1522,7 +1523,6 @@
     <script src="js/main.js"></script>
 
     <script>
-        // Function to initialize Isotope.js
         function initializeIsotope() {
             var container = document.getElementById("portfolio-container");
             var iso = new Isotope(container, {
@@ -1532,21 +1532,49 @@
                     columnWidth: ".portfolio-item"
                 }
             });
-
-            // Layout adjustment after all images have loaded
             imagesLoaded(container, function () {
                 iso.layout();
             });
         }
-
-        // Call the initializeIsotope function when the page is fully loaded
         window.addEventListener("load", initializeIsotope);
     </script>
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const sections = document.querySelectorAll('div[id]');
 
+            function updateActiveNavLink() {
+                const currentScrollPos = window.scrollY;
 
+                let currentSection;
+                for (const section of sections) {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.offsetHeight;
 
+                    if (currentScrollPos > sectionTop && currentScrollPos < sectionBottom) {
+                        currentSection = section;
+                        break;
+                    }
+                }
+
+                if (currentSection) {
+                    const sectionId = currentSection.getAttribute('id');
+                    for (const link of navLinks) {
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        } else {
+                            link.classList.remove('active');
+                        }
+                    }
+                }
+            }
+
+            updateActiveNavLink();
+            window.addEventListener('scroll', updateActiveNavLink);
+        });
+    </script>
 
 </body>
 
