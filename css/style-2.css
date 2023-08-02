@@ -191,14 +191,14 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
+    background: rgba(20, 24, 62, 1);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .page-header-inner {
-    background: rgba(15, 23, 43, .7);
+    background: rgba(20, 24, 62, .3);
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -450,7 +450,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background: linear-gradient(rgba(20, 24, 62, 0), var(--dark));
+    background: rgba(20, 24, 62, .3);
     z-index: 1;
 }
 
