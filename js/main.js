@@ -104,5 +104,53 @@
 })(jQuery);
 
 
+// Get Year
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 
+// initializeIsotope
+function initializeIsotope() {
+    var container = document.getElementById("portfolio-container");
+    var iso = new Isotope(container, {
+        itemSelector: ".portfolio-item",
+        layoutMode: "masonry",
+        masonry: {
+            columnWidth: ".portfolio-item"
+        }
+    });
+    imagesLoaded(container, function () {
+        iso.layout();
+    });
+}
+window.addEventListener("load", initializeIsotope);
+
+// Scroll 
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const sections = document.querySelectorAll('div[id]');
+    function updateActiveNavLink() {
+        const currentScrollPos = window.scrollY;
+        let currentSection;
+        for (const section of sections) {
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.offsetHeight;
+
+            if (currentScrollPos > sectionTop && currentScrollPos < sectionBottom) {
+                currentSection = section;
+                break;
+            }
+        }
+        if (currentSection) {
+            const sectionId = currentSection.getAttribute('id');
+            for (const link of navLinks) {
+                if (link.getAttribute('href') === `#${sectionId}`) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            }
+        }
+    }
+    updateActiveNavLink();
+    window.addEventListener('scroll', updateActiveNavLink);
+});
 
