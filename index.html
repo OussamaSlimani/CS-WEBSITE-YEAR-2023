@@ -1,1566 +1,2324 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>IEEE CS ENIS SBC</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/LOGO_CS.png" rel="icon">
+    <link href="img/LOGO_CS.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status">
-        </div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-4">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <img class="img-fluid me-3" src="img/LOGO-02.png" alt="">
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
-                <a href="#carousel" class="nav-item nav-link active">Home</a>
-                <div class="nav-item dropdown">
-                    <a href="#about" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                    <div class="dropdown-menu bg-light border-0 m-0">
-                        <a href="#about" class="dropdown-item">History</a>
-                        <a href="#number" class="dropdown-item">Statistics</a>
-                        <a href="#feature" class="dropdown-item">Main Goals</a>
-                    </div>
-                </div>
-                <a href="#team" class="nav-item nav-link">Teams</a>
-                <a href="#projects" class="nav-item nav-link">Activities</a>
-                <a href="#faq" class="nav-item nav-link">FAQ</a>
-                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-4"
+    >
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img class="img-fluid me-3" src="img/LOGO-02.png" alt="" />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+          <a href="#carousel" class="nav-item nav-link active">Home</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#about"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >About</a
+            >
+            <div class="dropdown-menu bg-light border-0 m-0">
+              <a href="#about" class="dropdown-item">History</a>
+              <a href="#number" class="dropdown-item">Statistics</a>
+              <a href="#feature" class="dropdown-item">Main Goals</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.facebook.com/CSENISsbc" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.instagram.com/ieee_cs_enis_sc/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR2MvVhhoqBj-3Tm30cab1kns3llZHDY_K64E78htmQgfOYT4AulMcrTuGQ"
-                    target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://tn.linkedin.com/company/ieee-computer-society-enis-student-chapter" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
-            </div>
+          </div>
+          <a href="#team" class="nav-item nav-link">Teams</a>
+          <a href="#projects" class="nav-item nav-link">Activities</a>
+          <a href="#faq" class="nav-item nav-link">FAQ</a>
+          <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
+        <div class="h-100 d-lg-inline-flex align-items-center d-none">
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            href="https://www.facebook.com/CSENISsbc"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            href="https://www.instagram.com/ieee_cs_enis_sc/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR2MvVhhoqBj-3Tm30cab1kns3llZHDY_K64E78htmQgfOYT4AulMcrTuGQ"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            href="https://tn.linkedin.com/company/ieee-computer-society-enis-student-chapter"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
     <div id="carousel" class="container-fluid p-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel/c2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">IEEE COMPUTER SOCIETY
-                                        CHAPTER ENIS STUDENT BRANCH.</h1>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Together towards a
-                                        healthier tomorrow, with care, compassion, and community.</p>
-                                    <a href="#about" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="img/carousel/c2.jpg" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 pt-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInDown">
+                      IEEE COMPUTER SOCIETY CHAPTER ENIS STUDENT BRANCH.
+                    </h1>
+                    <p
+                      class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown"
+                    >
+                      Together towards a healthier tomorrow, with care,
+                      compassion, and community.
+                    </p>
+                    <a
+                      href="#about"
+                      class="btn btn-primary py-3 px-5 animated slideInDown"
+                      >Explore More
+                    </a>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel/c1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">IEEE ENIS STUDENT BRANCH
-                                        - COMPUTER SOCIETY.</h1>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Nurturing
-                                        innovation, empowering dreams, and unlocking boundless possibilities.</p>
-                                    <a href="#about" class="btn btn-primary py-3 px-5 animated slideInDown">Explore
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel/c3.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">CS Chapter - IEEE Enis
-                                        Student Branch</h1>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">It is the outcome
-                                        of preparation, dedication, and gaining wisdom from setbacks to explore.</p>
-                                    <a href="#about" class="btn btn-primary py-3 px-5 animated slideInDown">Explore
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/carousel/c1.jpg" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 pt-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInDown">
+                      IEEE ENIS STUDENT BRANCH - COMPUTER SOCIETY.
+                    </h1>
+                    <p
+                      class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown"
+                    >
+                      Nurturing innovation, empowering dreams, and unlocking
+                      boundless possibilities.
+                    </p>
+                    <a
+                      href="#about"
+                      class="btn btn-primary py-3 px-5 animated slideInDown"
+                      >Explore More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/carousel/c3.jpg" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 pt-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInDown">
+                      CS Chapter - IEEE Enis Student Branch
+                    </h1>
+                    <p
+                      class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown"
+                    >
+                      It is the outcome of preparation, dedication, and gaining
+                      wisdom from setbacks to explore.
+                    </p>
+                    <a
+                      href="#about"
+                      class="btn btn-primary py-3 px-5 animated slideInDown"
+                      >Explore More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <!-- Carousel End -->
 
     <div id="about">
-        <!-- About Start -->
-        <div class="container-xxl pt-5 ">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
-                            <img class="position-absolute w-100 h-100" src="img/About/About.jpg" alt=""
-                                style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="h-100">
-                            <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">ABOUT US</div>
-                            <h1 class="display-6 mb-5">IEEE Computer Society Chapter ENIS Student Branch.</h1>
-                            <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
-                                <p class="text-dark mb-2 fs-6">The IEEE Computer Society is renowned for promoting
-                                    computer
-                                    science and engineering. The Enis Student Branch Chapter, established on January 27,
-                                    2010, at the National School of Engineering of Sfax, focuses on providing its
-                                    members
-                                    with essential Information Technology knowledge to boost their careers and improve
-                                    their
-                                    skills. Through engaging programs and networking opportunities, the chapter empowers
-                                    aspiring professionals to excel in the ever-evolving technology landscape.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- About Start -->
+      <div class="container-xxl pt-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div
+                class="position-relative overflow-hidden h-100"
+                style="min-height: 400px"
+              >
+                <img
+                  class="position-absolute w-100 h-100"
+                  src="img/About/About.jpg"
+                  alt=""
+                  style="object-fit: cover"
+                />
+              </div>
             </div>
-        </div>
-        <!-- About End -->
-
-        <!-- Facts Start -->
-        <div id="number" class="container-xxl my-5 py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">IEEE CS ENIS SBC IN
-                        NUMBERS</div>
-                    <h1 class="display-6">Quantifying Success.</h1>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100">
+                <div
+                  class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+                >
+                  ABOUT US
                 </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="container-xxl pt-4">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                                        <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-                                        <h5 class="mb-3">Years Old</h5>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <h1 class="display-6 mb-0">+</h1>
-                                            <h1 class="display-5 mb-0" data-toggle="counter-up">13</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                                        <i class="fa fa-users fa-4x text-primary mb-4"></i>
-                                        <h5 class="mb-3">Members</h5>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <h1 class="display-6 mb-0">+</h1>
-                                            <h1 class="display-5 mb-0" data-toggle="counter-up">70</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                                        <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
-                                        <h5 class="mb-3">Meetings</h5>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <h1 class="display-6 mb-0">+</h1>
-                                            <h1 class="display-5 mb-0" data-toggle="counter-up">50</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                                        <i class="fa fa-check fa-4x text-primary mb-4"></i>
-                                        <h5 class="mb-3">Events and Conferences</h5>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <h1 class="display-6 mb-0">+</h1>
-                                            <h1 class="display-5 mb-0" data-toggle="counter-up">60</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h1 class="display-6 mb-5">
+                  IEEE Computer Society Chapter ENIS Student Branch.
+                </h1>
+                <div
+                  class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4"
+                >
+                  <p class="text-dark mb-2 fs-6">
+                    The IEEE Computer Society is renowned for promoting computer
+                    science and engineering. The Enis Student Branch Chapter,
+                    established on January 27, 2010, at the National School of
+                    Engineering of Sfax, focuses on providing its members with
+                    essential Information Technology knowledge to boost their
+                    careers and improve their skills. Through engaging programs
+                    and networking opportunities, the chapter empowers aspiring
+                    professionals to excel in the ever-evolving technology
+                    landscape.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Facts End -->
+      </div>
+      <!-- About End -->
 
-        <!-- Features Start -->
-        <div class="container-xxl" id="feature">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">IEEE CS ENIS SBC MAIN
-                        GOALS</div>
-                    <h1 class="display-6 mb-5">Empowering Minds, Building Innovators.</h1>
-                </div>
+      <!-- Facts Start -->
+      <div id="number" class="container-xxl my-5 py-5">
+        <div class="container py-5">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 500px"
+          >
+            <div
+              class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+            >
+              IEEE CS ENIS SBC IN NUMBERS
+            </div>
+            <h1 class="display-6">Quantifying Success.</h1>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="container-xxl pt-4">
+              <div class="container">
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-layer-group text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Event Organisation</h5>
-                            <p class="m-0">We organize a diverse range of activities to fulfill our chapter's mission
-                                and
-                                cater to the needs of our members. These activities include conferences, competitions,
-                                hackathons, entertainment events, and workshops. We believe in actively involving our
-                                members in the organizational aspects of our work to ensure a sense of ownership and
-                                inclusivity within the chapter.</p>
-                        </div>
+                  <div
+                    class="col-lg-3 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                  >
+                    <div
+                      class="fact-item bg-light rounded text-center h-100 p-5"
+                    >
+                      <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                      <h5 class="mb-3">Years Old</h5>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <h1 class="display-6 mb-0">+</h1>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">
+                          13
+                        </h1>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-edit text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Technical and Communicational Prowess</h5>
-                            <p class="m-0">By creating various sustainable and collaborative opportunities to engage in,
-                                we
-                                ensure that those who are deeply involved with our chapter’s work can truly understand
-                                what
-                                it means to be an engineer. Our members have ample occasions to develop their hard and
-                                soft
-                                skills. Our chapter takes pride in nursing the potential of all its members.</p>
-                        </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.3s"
+                  >
+                    <div
+                      class="fact-item bg-light rounded text-center h-100 p-5"
+                    >
+                      <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                      <h5 class="mb-3">Members</h5>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <h1 class="display-6 mb-0">+</h1>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">
+                          70
+                        </h1>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-shield-alt text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Community Building</h5>
-                            <p class="m-0">Our members actively interact and engage in various debates, fostering a
-                                creative
-                                and collaborative environment where they can freely express and share numerous
-                                innovative
-                                ideas. To strengthen our team-work skills, we frequently conduct online meetings to
-                                accommodate the requests of our members. We prioritise growing friendships as well as
-                                competitiveness amongst our members.</p>
-                        </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.5s"
+                  >
+                    <div
+                      class="fact-item bg-light rounded text-center h-100 p-5"
+                    >
+                      <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
+                      <h5 class="mb-3">Meetings</h5>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <h1 class="display-6 mb-0">+</h1>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">
+                          50
+                        </h1>
+                      </div>
                     </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.7s"
+                  >
+                    <div
+                      class="fact-item bg-light rounded text-center h-100 p-5"
+                    >
+                      <i class="fa fa-check fa-4x text-primary mb-4"></i>
+                      <h5 class="mb-3">Events and Conferences</h5>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <h1 class="display-6 mb-0">+</h1>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">
+                          60
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Features End -->
+      </div>
+      <!-- Facts End -->
+
+      <!-- Features Start -->
+      <div class="container-xxl" id="feature">
+        <div class="container py-5 px-lg-5">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 500px"
+          >
+            <div
+              class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+            >
+              IEEE CS ENIS SBC MAIN GOALS
+            </div>
+            <h1 class="display-6 mb-5">
+              Empowering Minds, Building Innovators.
+            </h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="feature-item bg-light rounded p-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-4"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-layer-group text-white fs-4"></i>
+                </div>
+                <h5 class="mb-3">Event Organisation</h5>
+                <p class="m-0">
+                  We organize a diverse range of activities to fulfill our
+                  chapter's mission and cater to the needs of our members. These
+                  activities include conferences, competitions, hackathons,
+                  entertainment events, and workshops. We believe in actively
+                  involving our members in the organizational aspects of our
+                  work to ensure a sense of ownership and inclusivity within the
+                  chapter.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="feature-item bg-light rounded p-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-4"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-edit text-white fs-4"></i>
+                </div>
+                <h5 class="mb-3">Technical and Communicational Prowess</h5>
+                <p class="m-0">
+                  By creating various sustainable and collaborative
+                  opportunities to engage in, we ensure that those who are
+                  deeply involved with our chapter’s work can truly understand
+                  what it means to be an engineer. Our members have ample
+                  occasions to develop their hard and soft skills. Our chapter
+                  takes pride in nursing the potential of all its members.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="feature-item bg-light rounded p-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle mb-4"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-shield-alt text-white fs-4"></i>
+                </div>
+                <h5 class="mb-3">Community Building</h5>
+                <p class="m-0">
+                  Our members actively interact and engage in various debates,
+                  fostering a creative and collaborative environment where they
+                  can freely express and share numerous innovative ideas. To
+                  strengthen our team-work skills, we frequently conduct online
+                  meetings to accommodate the requests of our members. We
+                  prioritise growing friendships as well as competitiveness
+                  amongst our members.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Features End -->
     </div>
 
     <!-- Team Start -->
     <div id="team" class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">IEEE CS ENIS SBC TEAMS
-                </div>
-                <h1 class="display-6"> Collaborative Teams, Driving Change.</h1>
-            </div>
-            <div class="row g-4  d-flex justify-content-center mt-2">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/bureau/ss-06.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.facebook.com/mahdi.bradai.9" target="_blank"><i
-                                        class="fab fa-facebook-f fw-normal"></i> </a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.instagram.com/bradaimahdi/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR2MvVhhoqBj-3Tm30cab1kns3llZHDY_K64E78htmQgfOYT4AulMcrTuGQ"
-                                    target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.linkedin.com/in/bradai-mohamed-mahdi-a06261256/"
-                                    target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-2">
-                            <h5>Mahdi Bradai</h5>
-                            <span class="text-primary">Chair</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/bureau/ss-03.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.facebook.com/profile.php?id=100028581829180" target="_blank"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.instagram.com/siwar_gouirah_/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D&fbclid=IwAR2GAhlor8rbO6uMCc9htFScTNrLR9kEPQ-8008rm6ot-8RXUogQrXloVmM"
-                                    target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.linkedin.com/in/siwar-gouirah-3a38b0242/" target="_blank"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-2">
-                            <h5>Siwar Gouirah</h5>
-                            <span class="text-primary">Vice Chair</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/bureau/ss-02.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.facebook.com/mariem.benslimen.140" target="_blank"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.instagram.com/mariem_benslimen/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR1_xmcRKUkKCnAs0lR2EVzmqJwRqg14CBH5HbaAq_IluK-2koKmJ2XU4wU"
-                                    target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.linkedin.com/in/mariem-benslimen-18013b212/" target="_blank"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-2">
-                            <h5>Mariem Benslimen</h5>
-                            <span class="text-primary">Secretary</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/bureau/ss-04.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.facebook.com/iheb.charfeddine.7" target="_blank"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.instagram.com/charfeddineiheb/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR0h6oslTWq6QGkf5nBa6BwlMq2M4ZUiofWLhKe3gBXsO-uDWC-oIYI7OxE"
-                                    target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.linkedin.com/in/charfeddine-iheb-77b617252/" target="_blank"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-2">
-                            <h5>Iheb Charfeddine</h5>
-                            <span class="text-primary">Treasurer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/bureau/ss-07.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.facebook.com/mahdi.gouiaa.7" target="_blank"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.instagram.com/med__mahdii/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR0Iovz1rZZ1H0rixwN3uvZ4siRiTus4fP3VDDDO4fWVNm9m1p9qvnbCQIY"
-                                    target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-2">
-                            <h5>Mahdi Gouiaa</h5>
-                            <span class="text-primary">Web Master</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/bureau/ss-05.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.facebook.com/oussama.slimani.2001/" target="_blank"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.instagram.com/oussama.slimani.2001/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR3Nu0Dpm_ZGj-J-IprkxyTK_Zi_3XuEbQo5LS9qxZ0dirLnOhAhIBfGf4g"
-                                    target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1"
-                                    href="https://www.linkedin.com/in/oussama-slimani/" target="_blank"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-2">
-                            <h5>Oussama Slimani</h5>
-                            <span class="text-primary">Project Manager</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <div
+            class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+          >
+            IEEE CS ENIS SBC TEAMS
+          </div>
+          <h1 class="display-6">Collaborative Teams, Driving Change.</h1>
         </div>
+        <div class="row g-4 d-flex justify-content-center mt-2">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="team-img position-relative overflow-hidden">
+                <img class="img-fluid" src="img/bureau/ss-06.jpg" alt="" />
+                <div class="team-social">
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.facebook.com/mahdi.bradai.9"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f fw-normal"></i>
+                  </a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.instagram.com/bradaimahdi/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR2MvVhhoqBj-3Tm30cab1kns3llZHDY_K64E78htmQgfOYT4AulMcrTuGQ"
+                    target="_blank"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.linkedin.com/in/bradai-mohamed-mahdi-a06261256/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-2">
+                <h5>Mahdi Bradai</h5>
+                <span class="text-primary">Chair</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="team-img position-relative overflow-hidden">
+                <img class="img-fluid" src="img/bureau/ss-03.jpg" alt="" />
+                <div class="team-social">
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.facebook.com/profile.php?id=100028581829180"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.instagram.com/siwar_gouirah_/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D&fbclid=IwAR2GAhlor8rbO6uMCc9htFScTNrLR9kEPQ-8008rm6ot-8RXUogQrXloVmM"
+                    target="_blank"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.linkedin.com/in/siwar-gouirah-3a38b0242/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-2">
+                <h5>Siwar Gouirah</h5>
+                <span class="text-primary">Vice Chair</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="team-img position-relative overflow-hidden">
+                <img class="img-fluid" src="img/bureau/ss-02.jpg" alt="" />
+                <div class="team-social">
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.facebook.com/mariem.benslimen.140"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.instagram.com/mariem_benslimen/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR1_xmcRKUkKCnAs0lR2EVzmqJwRqg14CBH5HbaAq_IluK-2koKmJ2XU4wU"
+                    target="_blank"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.linkedin.com/in/mariem-benslimen-18013b212/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-2">
+                <h5>Mariem Benslimen</h5>
+                <span class="text-primary">Secretary</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="team-img position-relative overflow-hidden">
+                <img class="img-fluid" src="img/bureau/ss-04.jpg" alt="" />
+                <div class="team-social">
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.facebook.com/iheb.charfeddine.7"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.instagram.com/charfeddineiheb/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR0h6oslTWq6QGkf5nBa6BwlMq2M4ZUiofWLhKe3gBXsO-uDWC-oIYI7OxE"
+                    target="_blank"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.linkedin.com/in/charfeddine-iheb-77b617252/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-2">
+                <h5>Iheb Charfeddine</h5>
+                <span class="text-primary">Treasurer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item">
+              <div class="team-img position-relative overflow-hidden">
+                <img class="img-fluid" src="img/bureau/ss-07.jpg" alt="" />
+                <div class="team-social">
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.facebook.com/mahdi.gouiaa.7"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.instagram.com/med__mahdii/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR0Iovz1rZZ1H0rixwN3uvZ4siRiTus4fP3VDDDO4fWVNm9m1p9qvnbCQIY"
+                    target="_blank"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary rounded-circle m-1"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-2">
+                <h5>Mahdi Gouiaa</h5>
+                <span class="text-primary">Web Master</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="team-img position-relative overflow-hidden">
+                <img class="img-fluid" src="img/bureau/ss-05.jpg" alt="" />
+                <div class="team-social">
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.facebook.com/oussama.slimani.2001/"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.instagram.com/oussama.slimani.2001/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR3Nu0Dpm_ZGj-J-IprkxyTK_Zi_3XuEbQo5LS9qxZ0dirLnOhAhIBfGf4g"
+                    target="_blank"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-square btn-primary rounded-circle m-1"
+                    href="https://www.linkedin.com/in/oussama-slimani/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-2">
+                <h5>Oussama Slimani</h5>
+                <span class="text-primary">Project Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Team End -->
 
     <!-- =========== Projects Start ============= -->
     <div id="projects" class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">IEEE CS ENIS SBC
-                    ACTIVITIES</div>
-                <h1 class="display-6 mb-5">Shaping Minds, Dynamic Activities.</h1>
-            </div>
-            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Event</li>
-                        <li class="mx-2" data-filter=".second">Workshops</li>
-                        <li class="mx-2" data-filter=".third">Hello World</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container wow fadeIn" data-wow-delay="0.5s" id="portfolio-container">
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/techX/11-01.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Event
-                                </p>
-                            </div>
-                            <div class="p-4">
-                                <small>
-                                    <i class="far fa-calendar-alt text-primary me-2"></i>12 December,
-                                    2021
-                                </small>
-                                <h4 class="mb-3 mt-2">TechXchange 2021</h4>
-                                <p>TechXchange is an event proposed by the IEEE CS SYP that focuses on emerging
-                                    technologies in the field of Computer Science...</p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal" data-bs-target="#TechX">Read
-                                    More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item first third">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/Hello_word_2/h1.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Event</p>
-                            </div>
-                            <div class="p-4">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>14 May, 2022</small>
-                                <h4 class="mb-3 mt-2 ">Hello World! 2.0</h4>
-                                <p>Hello World 2.0 stands as a captivating and dynamic Problem-Solving event, expertly
-                                    crafted and hosted by the prestigious...</p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal" data-bs-target="#HW2">Read
-                                    More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/Xtreme_16.0/66-01.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Event</p>
-                            </div>
-                            <div class="p-4">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>21 October, 2022</small>
-                                <h4 class="mb-3 mt-2">IEEEXtreme 16.0</h4>
-                                <p>
-                                    In order to participate in IEEEXtreme 16.0, an international challenge, IEEE student
-                                    members worldwide competed for...
-                                </p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal"
-                                    data-bs-target="#xtreme16">Read More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/Hour_of_code/15151-01.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Event</p>
-                            </div>
-                            <div class="p-4">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>4 December, 2022</small>
-                                <h4 class="mb-3 mt-2">Hour Of Code</h4>
-                                <p>
-                                    The IEEE Computer Society ENIS SB orchestrated a transformative event, "Hour of
-                                    Code," on December 4th, 2022, with...
-                                </p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal" data-bs-target="#hour">Read
-                                    More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/PHP_worshop/6-01.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Workshop</p>
-                            </div>
-                            <div class="p-4">
-                                <small>
-                                    <i class="far fa-calendar-alt text-primary me-2"></i>11 February,
-                                    2023
-                                </small>
-                                <h4 class="mb-3 mt-2">PHP Workshop</h4>
-                                <p>
-                                    A big, heartfelt expression of gratitude goes out to each and every one of you for
-                                    your active participation in our recent PHP workshop...
-                                </p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal" data-bs-target="#phpw">Read
-                                    More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/git_github/5451561-01.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Workshop</p>
-                            </div>
-                            <div class="p-4">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>26 March, 2023</small>
-                                <h4 class="mb-3 mt-2">Git/GitHub Workshop</h4>
-                                <p>
-                                    In collaboration with the IEEE Women In Engineering ENIS Student Affinity Group and
-                                    in an initiative to further instill Women's...
-                                </p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal" data-bs-target="#GitHub">Read
-                                    More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/C++_training/aa.png" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Workshop</p>
-                            </div>
-                            <div class="p-4">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>14 April, 2023</small>
-                                <h4 class="mb-3 mt-2">C++ Training Sessions</h4>
-                                <p>
-                                    In Preparation to the third version of Hello World!, the IEEE ENIS Computer Society
-                                    has solicited the help of a renowned problem...
-                                </p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal"
-                                    data-bs-target="#CPlusPlus">Read More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item first third">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/Hello_world_3/w1.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Event</p>
-                            </div>
-                            <div class="p-4">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>29 April, 2023</small>
-                                <h4 class="mb-3 mt-2">HELLO WORLD! 3.0</h4>
-                                <p>
-                                    The epic quest of problem-solving and coding excellence, "Hello World! 3.0,"
-                                    concluded at the Digital Research Centre of Sfax...
-                                </p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal" data-bs-target="#HW3">Read
-                                    More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-inner">
-                        <div class="blog-item bg-light rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/Activities/Junior/1.jpg" alt="">
-                                <p
-                                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                                    Event</p>
-                            </div>
-                            <div class="p-4">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>10 May, 2023</small>
-                                <h4 class="mb-3 mt-2">CS JUNIOR</h4>
-                                <p>
-                                    The CS Junior workshop, organized by CS ENIS IEEE SBC, proved to be a wonderful
-                                    experience
-                                    On May 10th, ...
-                                </p>
-                                <a class="READ-MORE text-uppercase" data-bs-toggle="modal" data-bs-target="#Junior">Read
-                                    More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.5s"
+          style="max-width: 500px"
+        >
+          <div
+            class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+          >
+            IEEE CS ENIS SBC ACTIVITIES
+          </div>
+          <h1 class="display-6 mb-5">Shaping Minds, Dynamic Activities.</h1>
         </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-12 text-center">
+            <ul class="list-inline mb-5" id="portfolio-flters">
+              <li class="mx-2 active" data-filter="*">All</li>
+              <li class="mx-2" data-filter=".first">Event</li>
+              <li class="mx-2" data-filter=".second">Workshops</li>
+              <li class="mx-2" data-filter=".third">Hello World</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="row g-4 portfolio-container wow fadeIn"
+          data-wow-delay="0.5s"
+          id="portfolio-container"
+        >
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/techX/11-01.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Event
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small>
+                    <i class="far fa-calendar-alt text-primary me-2"></i>12
+                    December, 2021
+                  </small>
+                  <h4 class="mb-3 mt-2">TechXchange 2021</h4>
+                  <p>
+                    TechXchange is an event proposed by the IEEE CS SYP that
+                    focuses on emerging technologies in the field of Computer
+                    Science...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#TechX"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item first third">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/Hello_word_2/h1.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Event
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small
+                    ><i class="far fa-calendar-alt text-primary me-2"></i>14
+                    May, 2022</small
+                  >
+                  <h4 class="mb-3 mt-2">Hello World! 2.0</h4>
+                  <p>
+                    Hello World 2.0 stands as a captivating and dynamic
+                    Problem-Solving event, expertly crafted and hosted by the
+                    prestigious...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#HW2"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/Xtreme_16.0/66-01.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Event
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small
+                    ><i class="far fa-calendar-alt text-primary me-2"></i>21
+                    October, 2022</small
+                  >
+                  <h4 class="mb-3 mt-2">IEEEXtreme 16.0</h4>
+                  <p>
+                    In order to participate in IEEEXtreme 16.0, an international
+                    challenge, IEEE student members worldwide competed for...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#xtreme16"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/Hour_of_code/15151-01.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Event
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small
+                    ><i class="far fa-calendar-alt text-primary me-2"></i>4
+                    December, 2022</small
+                  >
+                  <h4 class="mb-3 mt-2">Hour Of Code</h4>
+                  <p>
+                    The IEEE Computer Society ENIS SB orchestrated a
+                    transformative event, "Hour of Code," on December 4th, 2022,
+                    with...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#hour"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/PHP_worshop/6-01.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Workshop
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small>
+                    <i class="far fa-calendar-alt text-primary me-2"></i>11
+                    February, 2023
+                  </small>
+                  <h4 class="mb-3 mt-2">PHP Workshop</h4>
+                  <p>
+                    A big, heartfelt expression of gratitude goes out to each
+                    and every one of you for your active participation in our
+                    recent PHP workshop...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#phpw"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/git_github/5451561-01.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Workshop
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small
+                    ><i class="far fa-calendar-alt text-primary me-2"></i>26
+                    March, 2023</small
+                  >
+                  <h4 class="mb-3 mt-2">Git/GitHub Workshop</h4>
+                  <p>
+                    In collaboration with the IEEE Women In Engineering ENIS
+                    Student Affinity Group and in an initiative to further
+                    instill Women's...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#GitHub"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/C++_training/aa.png"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Workshop
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small
+                    ><i class="far fa-calendar-alt text-primary me-2"></i>14
+                    April, 2023</small
+                  >
+                  <h4 class="mb-3 mt-2">C++ Training Sessions</h4>
+                  <p>
+                    In Preparation to the third version of Hello World!, the
+                    IEEE ENIS Computer Society has solicited the help of a
+                    renowned problem...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#CPlusPlus"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item first third">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/Hello_world_3/w1.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Event
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small
+                    ><i class="far fa-calendar-alt text-primary me-2"></i>29
+                    April, 2023</small
+                  >
+                  <h4 class="mb-3 mt-2">HELLO WORLD! 3.0</h4>
+                  <p>
+                    The epic quest of problem-solving and coding excellence,
+                    "Hello World! 3.0," concluded at the Digital Research Centre
+                    of Sfax...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#HW3"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-inner">
+              <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="img/Activities/Junior/1.jpg"
+                    alt=""
+                  />
+                  <p
+                    class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                  >
+                    Event
+                  </p>
+                </div>
+                <div class="p-4">
+                  <small
+                    ><i class="far fa-calendar-alt text-primary me-2"></i>10
+                    May, 2023</small
+                  >
+                  <h4 class="mb-3 mt-2">CS JUNIOR</h4>
+                  <p>
+                    The CS Junior workshop, organized by CS ENIS IEEE SBC,
+                    proved to be a wonderful experience On May 10th, ...
+                  </p>
+                  <a
+                    class="READ-MORE text-uppercase"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Junior"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
     </div>
 
     <!-- TechXchange Start -->
-    <div class="modal fade" id="TechX" aria-hidden="true" aria-labelledby="TechXLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="TechXLabel">TechXchange 2021</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="TechX"
+      aria-hidden="true"
+      aria-labelledby="TechXLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TechXLabel">TechXchange 2021</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      TechXchange is an event proposed by the IEEE CS SYP that
+                      focuses on emerging technologies in the field of Computer
+                      Science. In 2021 and in collaboration with IEEE IAS ENIS
+                      SBC, the IEEE ENIS CS SBC hosted TechXchange while pairing
+                      it with the Enis's Industrial Forum's competition. The
+                      workshops that were hosted focused on IoT, embedded
+                      systems, Artificial Intelligence, Entrepreneurship and
+                      much more. Many industrial leaders and professionals have
+                      come forward to share their experiences with the
+                      participants and to provide insight to their respective
+                      fields of work. This provided students with ample
+                      opportunities to learn what it means to be an engineer in
+                      a professional setting while also reinforcing their
+                      technical prowess.
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        TechXchange is an event proposed by the IEEE CS SYP that focuses on emerging
-                                        technologies in the field of Computer Science. In 2021 and in collaboration with
-                                        IEEE IAS ENIS SBC, the IEEE ENIS CS SBC hosted TechXchange while pairing it with
-                                        the Enis's Industrial Forum's competition. The workshops that were hosted
-                                        focused on IoT, embedded systems, Artificial Intelligence, Entrepreneurship and
-                                        much more. Many industrial leaders and professionals have come forward to share
-                                        their experiences with the participants and to provide insight to their
-                                        respective fields of work. This provided students with ample opportunities to
-                                        learn what it means to be an engineer in a professional setting while also
-                                        reinforcing their technical prowess.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/techX/100-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/techX/11-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/techX/8-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/techX/9-01.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/techX/100-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/techX/11-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/techX/8-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/techX/9-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- TechXchange End -->
     <!-- Hello world 2.0 Start -->
-    <div class="modal fade" id="HW2" aria-hidden="true" aria-labelledby="HWLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="HWLabel">Hello World! 2.0</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="HW2"
+      aria-hidden="true"
+      aria-labelledby="HWLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="HWLabel">Hello World! 2.0</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      Hello World 2.0 stands as a captivating and dynamic
+                      Problem-Solving event, expertly crafted and hosted by the
+                      prestigious IEEE ENIS Computer Society Student Chapter. In
+                      its eagerly anticipated Second edition, Hello World will
+                      be divided into two enthralling segments. The first part
+                      will feature comprehensive training sessions focusing on
+                      algorithms and diverse data structures, commencing on the
+                      23rd of April 2022. These sessions aim to equip
+                      participants with essential problem-solving skills and
+                      technical knowledge. The excitement continues with the
+                      second segment, a thrilling Problem Solving competition,
+                      scheduled to take place on the 14th of May 2022 at the
+                      esteemed National Engineering School of Sfax (ENIS).
+                      During this intense competition, participants will put
+                      their newfound skills and ingenuity to the test, engaging
+                      in challenging problem-solving scenarios. Hello World 2.0
+                      embodies a unique opportunity for aspiring minds to delve
+                      into the captivating world of problem-solving and computer
+                      science. It promises to be an extraordinary experience
+                      that fosters growth, creativity, and camaraderie among
+                      participants, leaving an indelible mark on their journey
+                      of intellectual discovery.
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        Hello World 2.0 stands as a captivating and dynamic Problem-Solving event,
-                                        expertly crafted and hosted by the prestigious IEEE ENIS Computer Society
-                                        Student Chapter. In its eagerly anticipated Second edition, Hello World will be
-                                        divided into two enthralling segments. The first part will feature comprehensive
-                                        training sessions focusing on algorithms and diverse data structures, commencing
-                                        on the 23rd of April 2022. These sessions aim to equip participants with
-                                        essential problem-solving skills and technical knowledge.
-                                        The excitement continues with the second segment, a thrilling Problem Solving
-                                        competition, scheduled to take place on the 14th of May 2022 at the esteemed
-                                        National Engineering School of Sfax (ENIS). During this intense competition,
-                                        participants will put their newfound skills and ingenuity to the test, engaging
-                                        in challenging problem-solving scenarios.
-                                        Hello World 2.0 embodies a unique opportunity for aspiring minds to delve into
-                                        the captivating world of problem-solving and computer science. It promises to be
-                                        an extraordinary experience that fosters growth, creativity, and camaraderie
-                                        among participants, leaving an indelible mark on their journey of intellectual
-                                        discovery.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_word_2/h1.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_word_2/h2.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_word_2/h3.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_word_2/h4.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_word_2/h1.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_word_2/h2.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_word_2/h3.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_word_2/h4.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- Hello world 2.0 End -->
     <!-- Xtreme 16 Start -->
-    <div class="modal fade" id="xtreme16" aria-hidden="true" aria-labelledby="xtreme16Label" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="xtreme16Label">IEEEXtreme 16.0</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="xtreme16"
+      aria-hidden="true"
+      aria-labelledby="xtreme16Label"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="xtreme16Label">IEEEXtreme 16.0</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      In order to participate in IEEEXtreme 16.0, an
+                      international challenge, IEEE student members worldwide
+                      competed for 24 hours to solve programming problems. IEEE
+                      Computer Society ENIS Student Chapter brought together
+                      members on October 21 and 22 at the national engineering
+                      school of Sfax. Attendees enjoyed the fantastic
+                      environment and various activities planned for them. Once
+                      the problem set went online, everyone dove into their
+                      laptops with full concentration. We thank the 100 students
+                      who participated and made ENIS proud with their
+                      performance and spirit. Challenges demanded creativity,
+                      logic, and determination. For 24 hours, participants were
+                      immersed in coding, debugging, and intense discussions.
+                      IEEEXtreme 2023 was a success, and the organizers look
+                      forward to the next edition. Let the brilliance of the
+                      participants shine in the realm of IEEEXtreme!
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        In order to participate in IEEEXtreme 16.0, an international challenge, IEEE
-                                        student members worldwide competed for 24 hours to solve programming problems.
-                                        IEEE Computer Society ENIS Student Chapter brought together members on October
-                                        21 and 22 at the national engineering school of Sfax. Attendees enjoyed the
-                                        fantastic environment and various activities planned for them. Once the problem
-                                        set went online, everyone dove into their laptops with full concentration. We
-                                        thank the 100 students who participated and made ENIS proud with their
-                                        performance and spirit. Challenges demanded creativity, logic, and
-                                        determination. For 24 hours, participants were immersed in coding, debugging,
-                                        and intense discussions. IEEEXtreme 2023 was a success, and the organizers look
-                                        forward to the next edition. Let the brilliance of the participants shine in the
-                                        realm of IEEEXtreme!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Xtreme_16.0/13-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Xtreme_16.0/444-01.jpg"
-                                            alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Xtreme_16.0/66-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Xtreme_16.0/ss-01.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Xtreme_16.0/13-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Xtreme_16.0/444-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Xtreme_16.0/66-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Xtreme_16.0/ss-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- Xtreme 16 End -->
     <!-- HOUR OF CODE Start -->
-    <div class="modal fade" id="hour" aria-hidden="true" aria-labelledby="hourLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="hourLabel">Hour of Code</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="hour"
+      aria-hidden="true"
+      aria-labelledby="hourLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hourLabel">Hour of Code</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      The IEEE Computer Society ENIS SB orchestrated a
+                      transformative event, "Hour of Code," on December 4th,
+                      2022, with the noble mission of equipping children with
+                      the foundational principles of coding and inspiring them
+                      to explore the fascinating realm of computer science.
+                      Through this interactive initiative, young minds were
+                      introduced to the magic of programming, fostering a sense
+                      of curiosity and enthusiasm for technology. By encouraging
+                      learning and discovery, the event not only opened doors to
+                      endless possibilities but also nurtured the future
+                      innovators and problem solvers who will undoubtedly shape
+                      the world of tomorrow.
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        The IEEE Computer Society ENIS SB orchestrated a transformative event, "Hour of
-                                        Code," on December 4th, 2022, with the noble mission of equipping children with
-                                        the foundational principles of coding and inspiring them to explore the
-                                        fascinating realm of computer science. Through this interactive initiative,
-                                        young minds were introduced to the magic of programming, fostering a sense of
-                                        curiosity and enthusiasm for technology. By encouraging learning and discovery,
-                                        the event not only opened doors to endless possibilities but also nurtured the
-                                        future innovators and problem solvers who will undoubtedly shape the world of
-                                        tomorrow.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hour_of_code/123-01.jpg"
-                                            alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hour_of_code/15151-01.jpg"
-                                            alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hour_of_code/47-01.jpg"
-                                            alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hour_of_code/123-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hour_of_code/15151-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hour_of_code/47-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- HOUR OF CODE End -->
     <!-- PHP Start -->
-    <div class="modal fade" id="phpw" aria-hidden="true" aria-labelledby="phpwLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="phpwLabel">PHP Workshop</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="phpw"
+      aria-hidden="true"
+      aria-labelledby="phpwLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="phpwLabel">PHP Workshop</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      A big, heartfelt expression of gratitude goes out to each
+                      and every one of you for your active participation in our
+                      recent PHP workshop. Your eagerness to learn and your
+                      determination to acquire new coding skills made the
+                      workshop an unforgettable and special experience for us.
+                      We are immensely grateful to be surrounded by such a
+                      passionate and knowledge-hungry group of learners. We also
+                      want to extend our deepest appreciation to our dedicated
+                      trainer, Kadhem Belghuith, whose unwavering commitment
+                      made this workshop possible. Without a doubt, their
+                      expertise and dedication played a pivotal role in creating
+                      a valuable and enriching learning journey for all of us.
+                      Thank you, Kadhem, for making this experience truly
+                      exceptional. We look forward to more opportunities to
+                      learn and grow together in the future!
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        A big, heartfelt expression of gratitude goes out to each and every one of you
-                                        for your active participation in our recent PHP workshop. Your eagerness to
-                                        learn and your determination to acquire new coding skills made the workshop an
-                                        unforgettable and special experience for us. We are immensely grateful to be
-                                        surrounded by such a passionate and knowledge-hungry group of learners.
-                                        We also want to extend our deepest appreciation to our dedicated trainer, Kadhem
-                                        Belghuith, whose unwavering commitment made this workshop possible. Without a
-                                        doubt, their expertise and dedication played a pivotal role in creating a
-                                        valuable and enriching learning journey for all of us. Thank you, Kadhem, for
-                                        making this experience truly exceptional. We look forward to more opportunities
-                                        to learn and grow together in the future!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/PHP_worshop/5-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/PHP_worshop/6-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/PHP_worshop/7-01.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/PHP_worshop/5-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/PHP_worshop/6-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/PHP_worshop/7-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!--  PHP End -->
     <!-- GitHub Start -->
-    <div class="modal fade" id="GitHub" aria-hidden="true" aria-labelledby="GitHubLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="GitHubLabel">Git/GitHub Workshop</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="GitHub"
+      aria-hidden="true"
+      aria-labelledby="GitHubLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="GitHubLabel">Git/GitHub Workshop</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      In collaboration with the IEEE Women In Engineering ENIS
+                      Student Affinity Group and in an initiative to further
+                      instill Women's Engineering capacity, the IEEE ENIS
+                      Computer Society has organized a Git and Github Workshop.
+                      As part of any professional workplace in the IT field,
+                      mastering project version control is vital to the
+                      integrity of any large scale endeavor. As such, students
+                      are expected to be mindful of the functionalities of Git
+                      and Github to easily integrate their work into the
+                      pre-existing project ecosystem. Having invited the data
+                      engineer and former CS Chairman, Mr Kadhem Belghuith, to
+                      host the workshop, students have managed to grasp the
+                      fundamentals of Git and Github while also benefiting from
+                      his experience in project management using different kinds
+                      of tools.
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        In collaboration with the IEEE Women In Engineering ENIS Student Affinity Group
-                                        and in an initiative to further instill Women's Engineering capacity, the IEEE
-                                        ENIS Computer Society has organized a Git and Github Workshop. As part of any
-                                        professional workplace in the IT field, mastering project version control is
-                                        vital to the integrity of any large scale endeavor. As such, students are
-                                        expected to be mindful of the functionalities of Git and Github to easily
-                                        integrate their work into the pre-existing project ecosystem. Having invited the
-                                        data engineer and former CS Chairman, Mr Kadhem Belghuith, to host the workshop,
-                                        students have managed to grasp the fundamentals of Git and Github while also
-                                        benefiting from his experience in project management using different kinds of
-                                        tools.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/git_github/541-01.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/git_github/5451561-01.jpg"
-                                            alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/git_github/5454-01.jpg"
-                                            alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/git_github/541-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/git_github/5451561-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/git_github/5454-01.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!--  GitHub End -->
     <!-- CPlusPlus Start -->
-    <div class="modal fade" id="CPlusPlus" aria-hidden="true" aria-labelledby="#CPlusPlusLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="#CPlusPlusLabel">C++ Traning Session</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="CPlusPlus"
+      aria-hidden="true"
+      aria-labelledby="#CPlusPlusLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="#CPlusPlusLabel">
+              C++ Traning Session
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      In Preparation to the third version of Hello World!, the
+                      IEEE ENIS Computer Society has solicited the help of a
+                      renowned problem solving coach. Doctor Atef Masmoudi, a
+                      famous man whose success has placed him in the most
+                      prestigious universities, has agreed to host 2 Problem
+                      Solving Workshops that took place on the 14th and 16th of
+                      April online. With the goal of teaching students about
+                      data structures, dynamic programming and other different
+                      paradigms, our coach has spared no effort into helping
+                      participants grasp hard concepts and form an understanding
+                      on how to tackle any problem. Students who joined the
+                      workshops have had much to learn and with Doctor Atef's
+                      help, were able to get acquainted with the roadmap to
+                      master programming and to kickstart their passion for
+                      Problem Solving.
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        In Preparation to the third version of Hello World!, the IEEE ENIS Computer
-                                        Society has solicited the help of a renowned problem solving coach. Doctor Atef
-                                        Masmoudi, a famous man whose success has placed him in the most prestigious
-                                        universities, has agreed to host 2 Problem Solving Workshops that took place on
-                                        the 14th and 16th of April online. With the goal of teaching students about data
-                                        structures, dynamic programming and other different paradigms, our coach has
-                                        spared no effort into helping participants grasp hard concepts and form an
-                                        understanding on how to tackle any problem. Students who joined the workshops
-                                        have had much to learn and with Doctor Atef's help, were able to get acquainted
-                                        with the roadmap to master programming and to kickstart their passion for
-                                        Problem Solving.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/C++_training/aa.png" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/C++_training/bb.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/C++_training/aa.png"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/C++_training/bb.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!--  CPlusPlus End -->
 
     <!-- Junior Start -->
-    <div class="modal fade" id="Junior" aria-hidden="true" aria-labelledby="JuniorLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="JuniorLabel">HELLO WORLD! 3.0</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="Junior"
+      aria-hidden="true"
+      aria-labelledby="JuniorLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="JuniorLabel">HELLO WORLD! 3.0</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      The CS Junior workshop, organized by CS ENIS IEEE SBC,
+                      proved to be a wonderful experience On May 10th, our team
+                      visited the Primary School Habib 2, where children were
+                      taught about logic gates, electronics and computer science
+                      as a whole. Making a positive impact on their lives was a
+                      rewarding experience. The main goal was to empower the
+                      next generation of thinkers, achieved through an
+                      interactive website that made learning enjoyable. Our
+                      contribution to our SB's ingenious and very own IEEE
+                      Junior aimed to create a brighter future through education
+                      and to foster ambition in the younger generation.
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        The CS Junior workshop, organized by CS ENIS IEEE SBC, proved to be a wonderful
-                                        experience
-                                        On May 10th, our team visited the Primary School Habib 2, where children were
-                                        taught
-                                        about logic gates, electronics and computer science as a whole. Making a
-                                        positive
-                                        impact on their lives was a rewarding experience. The main goal was to empower
-                                        the
-                                        next generation of thinkers, achieved through an interactive website that made
-                                        learning enjoyable. Our contribution to our SB's ingenious and very own IEEE
-                                        Junior
-                                        aimed to create a brighter future through education and to foster ambition in
-                                        the
-                                        younger generation.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Junior/1.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Junior/2.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Junior/3.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Junior/4.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Junior/1.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Junior/2.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Junior/3.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Junior/4.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!--  Hello world 3.0 End -->
     <!-- Hello world 3.0 Start -->
-    <div class="modal fade" id="HW3" aria-hidden="true" aria-labelledby="hw3Label" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="hw3Label">HELLO WORLD! 3.0</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="HW3"
+      aria-hidden="true"
+      aria-labelledby="hw3Label"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hw3Label">HELLO WORLD! 3.0</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- -->
+            <div class="container">
+              <div class="row g-5">
+                <div class="h-100">
+                  <div
+                    class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4"
+                  >
+                    <p class="text-dark mb-2 fs-6">
+                      The epic quest of problem-solving and coding excellence,
+                      "Hello World! 3.0," concluded at the Digital Research
+                      Centre of Sfax. Participants faced thrilling challenges,
+                      pushing coding skills to the limit. The competition
+                      showcased talent and fostered camaraderie. Enthusiastic
+                      coders worked side by side, exchanging ideas, and learning
+                      from one another. Anticipation was high as participants
+                      envisioned moments of triumph. Throughout the day, they
+                      experienced the rush of completing challenges and the
+                      satisfaction of overcoming hurdles. "Hello World! 3.0"
+                      united people with a common passion for programming. It
+                      celebrated the art and science of coding, fostering a
+                      sense of community. Memories of the event will linger,
+                      inspiring participants in their coding endeavors.
+                      Congratulations to all who took on the challenge and
+                      showcased their coding prowess. "Hello World! 3.0" will be
+                      remembered as a day of triumph, passion, and excellence in
+                      the coding world. Until the next adventure awaits, keep
+                      coding, problem-solving, and conquering new frontiers!
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- -->
-                    <div class="container">
-                        <div class="row g-5">
-                            <div class="h-100">
-                                <div class="bg-light border-bottom border-4 border-primary rounded p-4 mb-4">
-                                    <p class="text-dark mb-2 fs-6">
-                                        The epic quest of problem-solving and coding excellence, "Hello World! 3.0,"
-                                        concluded at the Digital Research Centre of Sfax. Participants faced thrilling
-                                        challenges, pushing coding skills to the limit. The competition showcased talent
-                                        and fostered camaraderie. Enthusiastic coders worked side by side, exchanging
-                                        ideas, and learning from one another.
-                                        Anticipation was high as participants envisioned moments of triumph. Throughout
-                                        the day, they experienced the rush of completing challenges and the satisfaction
-                                        of overcoming hurdles. "Hello World! 3.0" united people with a common passion
-                                        for programming. It celebrated the art and science of coding, fostering a sense
-                                        of community. Memories of the event will linger, inspiring participants in their
-                                        coding endeavors.
-                                        Congratulations to all who took on the challenge and showcased their coding
-                                        prowess. "Hello World! 3.0" will be remembered as a day of triumph, passion, and
-                                        excellence in the coding world. Until the next adventure awaits, keep coding,
-                                        problem-solving, and conquering new frontiers!
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <div class="container py-2">
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="owl-carousel testimonial-carousel">
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_world_3/w1.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_world_3/w2.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_world_3/w3.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_world_3/w4.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_world_3/w5.jpg" alt="Image">
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <img class="w-100 h-100" src="img/Activities/Hello_world_3/w6.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                </div>
+              </div>
             </div>
+            <!-- -->
+            <!-- -->
+            <div class="container py-2">
+              <div class="row g-2 justify-content-center">
+                <div class="col-lg-10">
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_world_3/w1.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_world_3/w2.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_world_3/w3.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_world_3/w4.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_world_3/w5.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="testimonial-item">
+                      <img
+                        class="w-100 h-100"
+                        src="img/Activities/Hello_world_3/w6.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+          </div>
         </div>
+      </div>
     </div>
     <!--  Hello world 3.0 End -->
     <!-- ============= Projects End ============ -->
 
     <!-- unit Start -->
     <div id="unit" class="container-xxl pt-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">IEEE CS ENIS SBC
-                            UNIT</div>
-                        <h1 class="display-6 mb-3">IEEE Cyber Security Enis Unit.</h1>
-                        <div class="bg-light border-bottom border-5 border-primary rounded p-4">
-                            <p class="text-dark mb-2 fs-6">
-                                IEEE Cyber Security Enis Unit is dedicated to advancing and promoting Cyber Security in
-                                the
-                                digital world. Their mission involves creating a community of individuals passionate
-                                about
-                                safeguarding systems and data. They offer programs and workshops that equip students and
-                                professionals with skills to address real-world challenges. Networking opportunities
-                                with
-                                industry experts bridge the gap between academia and technology. As part of the IEEE
-                                Computer
-                                Society Chapter, they specialise in Cyber Security, contributing to a secure digital
-                                future.
-                            </p>
-                            <a class="btn btn-outline-primary mt-2" href="index-2.html" target="_blank">
-                                Read More
-                                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                    <i class="fa fa-arrow-right"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <!-- Removed the "min-height" style from the div -->
-                    <div id="photo_about" class="position-relative overflow-hidden" style="height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="img/About/cyber2.jpg" alt=""
-                            style="object-fit: cover;">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100">
+              <div
+                class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+              >
+                IEEE CS ENIS SBC UNIT
+              </div>
+              <h1 class="display-6 mb-3">IEEE Cyber Security Enis Unit.</h1>
+              <div
+                class="bg-light border-bottom border-5 border-primary rounded p-4"
+              >
+                <p class="text-dark mb-2 fs-6">
+                  IEEE Cyber Security Enis Unit is dedicated to advancing and
+                  promoting Cyber Security in the digital world. Their mission
+                  involves creating a community of individuals passionate about
+                  safeguarding systems and data. They offer programs and
+                  workshops that equip students and professionals with skills to
+                  address real-world challenges. Networking opportunities with
+                  industry experts bridge the gap between academia and
+                  technology. As part of the IEEE Computer Society Chapter, they
+                  specialise in Cyber Security, contributing to a secure digital
+                  future.
+                </p>
+                <a
+                  class="btn btn-outline-primary mt-2"
+                  href="index-2.html"
+                  target="_blank"
+                >
+                  Read More
+                  <div
+                    class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+                  >
+                    <i class="fa fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <!-- Removed the "min-height" style from the div -->
+            <div
+              id="photo_about"
+              class="position-relative overflow-hidden"
+              style="height: 400px"
+            >
+              <img
+                class="position-absolute w-100 h-100"
+                src="img/About/cyber2.jpg"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- unit End -->
 
     <!-- FAQs Start -->
     <div id="faq" class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">FAQs </div>
-                <h1 class="display-6 mb-5">Frequently Asked Questions.</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ1">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    What is IEEE?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    IEEE is the world’s largest technical professional organization dedicated to
-                                    advancing technology for the benefit of humanity. IEEE and its members inspire a
-                                    global community through its highly cited publications, conferences, technology
-                                    standards, and professional and educational activities.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How many Chapters/Affinity in IEEE ENIS Student Branch?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    IEEE ENIS Student branch contains 8 chapters, 1 affinity group and 1 unit.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ2">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    What is ENIS?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Founded in 1983, the National School of Engineers of Sfax (ENIS) is one of the major
-                                    institutions for education, research, and technological transfer. It provides
-                                    training for engineers in seven disciplines, namely electrical engineering,
-                                    electromechanical engineering, computer engineering, materials engineering, civil
-                                    engineering, biological engineering, and geo-resources and environmental
-                                    engineering.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
-                            <h2 class="accordion-header" id="headingsix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                    Can all students from different fields join CS ENIS SBC
-                                </button>
-                            </h2>
-                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Yes, absolutely.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <div
+            class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+          >
+            FAQs
+          </div>
+          <h1 class="display-6 mb-5">Frequently Asked Questions.</h1>
         </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionFAQ1">
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    What is IEEE?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionFAQ1"
+                >
+                  <div class="accordion-body">
+                    IEEE is the world’s largest technical professional
+                    organization dedicated to advancing technology for the
+                    benefit of humanity. IEEE and its members inspire a global
+                    community through its highly cited publications,
+                    conferences, technology standards, and professional and
+                    educational activities.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How many Chapters/Affinity in IEEE ENIS Student Branch?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionFAQ1"
+                >
+                  <div class="accordion-body">
+                    IEEE ENIS Student branch contains 8 chapters, 1 affinity
+                    group and 1 unit.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionFAQ2">
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    What is ENIS?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionFAQ2"
+                >
+                  <div class="accordion-body">
+                    Founded in 1983, the National School of Engineers of Sfax
+                    (ENIS) is one of the major institutions for education,
+                    research, and technological transfer. It provides training
+                    for engineers in seven disciplines, namely electrical
+                    engineering, electromechanical engineering, computer
+                    engineering, materials engineering, civil engineering,
+                    biological engineering, and geo-resources and environmental
+                    engineering.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                <h2 class="accordion-header" id="headingsix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsesix"
+                    aria-expanded="false"
+                    aria-controls="collapsesix"
+                  >
+                    Can all students from different fields join CS ENIS SBC
+                  </button>
+                </h2>
+                <div
+                  id="collapsesix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingsix"
+                  data-bs-parent="#accordionFAQ2"
+                >
+                  <div class="accordion-body">Yes, absolutely.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- FAQs Start -->
 
     <!-- Testimonial Start -->
     <div id="testimonial" class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">Testimonial</div>
-                <h1 class="display-6 mb-5">Previous Experiences.</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/Experience/1.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Chaima Abdelkefi</h5>
-                            <span>Data Engineer and Ex CS Chairwoman</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Being the chairwoman of the IEEE Computer Society ENIS SBC has been one of the most
-                        rewarding experiences of my entire student life. I have gained a wealth of knowledge from the
-                        diverse experiences and attitudes of the people I have had the opportunity to meet and work
-                        with. This responsibility has pushed me beyond my comfort zone, allowing me to learn and grow in
-                        ways I never imagined. I have developed effective stress management skills, and it has given me
-                        a new perspective on various aspects of life. This experience has truly enriched me, not only in
-                        terms of leadership and management skills but also in fostering meaningful connections and
-                        making a positive impact within the community.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/Experience/2.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Kadhem Belghuith</h5>
-                            <span>Data Engineer and Ex CS Chairman</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">As an ex-chair of the IEEE Computer Society ENIS Student Branch Chapter, I can
-                        confidently say that I gained invaluable experiences and skills, such as leadership,
-                        organization, and communication, which have greatly contributed to my personal and professional
-                        growth. Being part of this vibrant community allowed me to enrich my knowledge and enhance my
-                        career prospects. Moreover, the friendships and connections I formed during my time as a member
-                        and chairperson will undoubtedly remain an enduring source of support and inspiration. I am
-                        genuinely grateful for the opportunities and lifelong benefits that the IEEE Computer Society
-                        ENIS Student Branch Chapter has provided me.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/Experience/3.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Trabelsi Akram</h5>
-                            <span>Computer Science Engineer and Ex CS Chairman</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">
-                        As the Chairman of the IEEE Computer Society Chapter at the National Engineering School of Sfax
-                        (ENIS), I led a range of initiatives focused on technology, innovation, and professional
-                        development. My role involved strategic planning and execution of numerous events and
-                        activities, enhancing both technical and soft skills of our members. Interacting with diverse
-                        groups, I fostered a collaborative environment and promoted skill development through seminars,
-                        workshops, and competitions. This leadership position refined my problem-solving and team
-                        management abilities, equipping me with valuable insights for future technology-driven
-                        environments.
-                        <br><br>
-                    </p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/Experience/4.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Mahdi Bradai</h5>
-                            <span>Computer Science Student and Current CS Chairman</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">
-                        My rise to Chairmanship was nothing short of a marvelous experience. With much to learn and
-                        sparks of motivation, I find myself embarked in a journey of self-betterment and intriguing
-                        discovery. While volunteering for this position, I have come to know, embrace and develop my
-                        skill set at an exponential rate; something I believe will play a huge role in kick starting my
-                        engineering career. I owe much of my humble but marking exploits to my team and extend to them
-                        my sincere appreciation for their cooperation and drive. I am thankful for being able to thrive
-                        under the mantle of the IEEE ENIS Computer Society Student Branch Chapter who I deeply cherish
-                        and vehemently consider to be the crown jewel of the IEEE ENIS Student Branch.
-                    </p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/Experience/51.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Bilel Djemel</h5>
-                            <span>Computer Science Student and Ex. CS Chairman</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">
-                        Being the chairman of IEEE ENIS CS SBC has been one of the most fruitful experiences that I have
-                        yet lived, it has allowed me to expand my network and get to know like-minded people that share
-                        the same interests as I do. It has enabled me to learn new leadership skills like managing a
-                        team, managing tasks...
-                        One of the things that I am most grateful for is the ability to discover so much potential
-                        within myself and what I could do as an individual and with my team as we were able to organize
-                        many activities, from workshops, events, and competitions to humanitarian activities as well.
-                        <br><br>
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <div
+            class="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3"
+          >
+            Testimonial
+          </div>
+          <h1 class="display-6 mb-5">Previous Experiences.</h1>
         </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="testimonial-item bg-light rounded p-4">
+            <div class="d-flex align-items-center mb-4">
+              <img
+                class="flex-shrink-0 rounded-circle border p-1"
+                src="img/Experience/1.jpg"
+                alt=""
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Chaima Abdelkefi</h5>
+                <span>Data Engineer and Ex CS Chairwoman</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Being the chairwoman of the IEEE Computer Society ENIS SBC has
+              been one of the most rewarding experiences of my entire student
+              life. I have gained a wealth of knowledge from the diverse
+              experiences and attitudes of the people I have had the opportunity
+              to meet and work with. This responsibility has pushed me beyond my
+              comfort zone, allowing me to learn and grow in ways I never
+              imagined. I have developed effective stress management skills, and
+              it has given me a new perspective on various aspects of life. This
+              experience has truly enriched me, not only in terms of leadership
+              and management skills but also in fostering meaningful connections
+              and making a positive impact within the community.
+            </p>
+          </div>
+          <div class="testimonial-item bg-light rounded p-4">
+            <div class="d-flex align-items-center mb-4">
+              <img
+                class="flex-shrink-0 rounded-circle border p-1"
+                src="img/Experience/2.jpg"
+                alt=""
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Kadhem Belghuith</h5>
+                <span>Data Engineer and Ex CS Chairman</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              As an ex-chair of the IEEE Computer Society ENIS Student Branch
+              Chapter, I can confidently say that I gained invaluable
+              experiences and skills, such as leadership, organization, and
+              communication, which have greatly contributed to my personal and
+              professional growth. Being part of this vibrant community allowed
+              me to enrich my knowledge and enhance my career prospects.
+              Moreover, the friendships and connections I formed during my time
+              as a member and chairperson will undoubtedly remain an enduring
+              source of support and inspiration. I am genuinely grateful for the
+              opportunities and lifelong benefits that the IEEE Computer Society
+              ENIS Student Branch Chapter has provided me.
+            </p>
+          </div>
+          <div class="testimonial-item bg-light rounded p-4">
+            <div class="d-flex align-items-center mb-4">
+              <img
+                class="flex-shrink-0 rounded-circle border p-1"
+                src="img/Experience/3.jpg"
+                alt=""
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Trabelsi Akram</h5>
+                <span>Computer Science Engineer and Ex CS Chairman</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              As the Chairman of the IEEE Computer Society Chapter at the
+              National Engineering School of Sfax (ENIS), I led a range of
+              initiatives focused on technology, innovation, and professional
+              development. My role involved strategic planning and execution of
+              numerous events and activities, enhancing both technical and soft
+              skills of our members. Interacting with diverse groups, I fostered
+              a collaborative environment and promoted skill development through
+              seminars, workshops, and competitions. This leadership position
+              refined my problem-solving and team management abilities,
+              equipping me with valuable insights for future technology-driven
+              environments.
+              <br /><br />
+            </p>
+          </div>
+          <div class="testimonial-item bg-light rounded p-4">
+            <div class="d-flex align-items-center mb-4">
+              <img
+                class="flex-shrink-0 rounded-circle border p-1"
+                src="img/Experience/4.jpg"
+                alt=""
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Mahdi Bradai</h5>
+                <span>Computer Science Student and Current CS Chairman</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              My rise to Chairmanship was nothing short of a marvelous
+              experience. With much to learn and sparks of motivation, I find
+              myself embarked in a journey of self-betterment and intriguing
+              discovery. While volunteering for this position, I have come to
+              know, embrace and develop my skill set at an exponential rate;
+              something I believe will play a huge role in kick starting my
+              engineering career. I owe much of my humble but marking exploits
+              to my team and extend to them my sincere appreciation for their
+              cooperation and drive. I am thankful for being able to thrive
+              under the mantle of the IEEE ENIS Computer Society Student Branch
+              Chapter who I deeply cherish and vehemently consider to be the
+              crown jewel of the IEEE ENIS Student Branch.
+            </p>
+          </div>
+          <div class="testimonial-item bg-light rounded p-4">
+            <div class="d-flex align-items-center mb-4">
+              <img
+                class="flex-shrink-0 rounded-circle border p-1"
+                src="img/Experience/51.jpg"
+                alt=""
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Bilel Djemel</h5>
+                <span>Computer Science Student and Ex. CS Chairman</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Being the chairman of IEEE ENIS CS SBC has been one of the most
+              fruitful experiences that I have yet lived, it has allowed me to
+              expand my network and get to know like-minded people that share
+              the same interests as I do. It has enabled me to learn new
+              leadership skills like managing a team, managing tasks... One of
+              the things that I am most grateful for is the ability to discover
+              so much potential within myself and what I could do as an
+              individual and with my team as we were able to organize many
+              activities, from workshops, events, and competitions to
+              humanitarian activities as well.
+              <br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Testimonial End -->
 
     <!-- Newsletter Start -->
     <div class="container-xxl newsletter py-5 bg-light">
-        <div class="text-center mx-auto mb-2 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="d-inline-block rounded-pill text-primary py-1 px-3 mb-3">IEEE CS ENIS SBC
-                NEWSLETTER</div>
-            <h1 class="display-6 mb-5">Grab a copy of our newsletter!</h1>
-            <a class="btn btn-outline-primary mt-2" href="" target="_blank">
-                Download
-                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                    <i class="fa fa-arrow-down"></i>
-                </div>
-            </a>
+      <div class="text-center mx-auto mb-2 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="d-inline-block rounded-pill text-primary py-1 px-3 mb-3">
+          IEEE CS ENIS SBC NEWSLETTER
         </div>
+        <h1 class="display-6 mb-5">Grab a copy of our newsletter!</h1>
+        <a class="btn btn-outline-primary mt-2" href="" target="_blank">
+          Download
+          <div
+            class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+          >
+            <i class="fa fa-arrow-down"></i>
+          </div>
+        </a>
+      </div>
     </div>
     <!-- Newsletter End -->
 
     <!-- Footer Start -->
-    <div id="contact" class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <h1 class="text-white mb-4">IEEE ENIS CS SBC</h1>
-                    <span>The IEEE Computer Society has built a strong reputation for its advocacy of computer science
-                        and engineering. At the National School of Engineering of Sfax, the Enis Student Branch Chapter
-                        was founded on January 27, 2010, with a clear mission: to equip its members with vital
-                        Information Technology knowledge, thus enhancing their career prospects and honing their
-                        abilities. By organizing enriching programs and fostering valuable networking connections, the
-                        chapter empowers ambitious individuals to thrive amidst the constantly changing technology
-                        domain.</span>
-                </div>
-                <div class="col-md-6">
-                    <div id="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1859442139585!2d10.717743795979837!3d34.72570711270346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13002ca4425ed6a1%3A0x1cb1842d2707fe25!2sNational%20Engineering%20School%20of%20Sfax!5e0!3m2!1sen!2sus!4v1690050981300!5m2!1sen!2sus"
-                            width="100%" height="250" style="border:0; border-radius: 23px;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Route Soukra km 3 B.P. 1173. Sfax. 3038, Tunisia</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>28 675 568</p>
-                    <p><i class="fa fa-envelope me-3"></i>mahdi.bradai21@ieee.org</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">About us</h5>
-                    <a class="btn btn-link" href="#about">History</a>
-                    <a class="btn btn-link" href="#number">Statistics</a>
-                    <a class="btn btn-link" href="#feature">Main Goals</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="#carousel">Home</a>
-                    <a class="btn btn-link" href="#team">Teams</a>
-                    <a class="btn btn-link" href="#projects">Activities</a>
-                    <a class="btn btn-link" href="#testimonial">Previous Experiences</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Follow Us</h5>
-                    <div class="d-flex">
-                        <a class="btn btn-square rounded-circle me-3" href="https://www.facebook.com/CSENISsbc"
-                            target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square rounded-circle me-3"
-                            href="https://www.instagram.com/ieee_cs_enis_sc/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR2MvVhhoqBj-3Tm30cab1kns3llZHDY_K64E78htmQgfOYT4AulMcrTuGQ"
-                            target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square rounded-circle me-3"
-                            href="https://tn.linkedin.com/company/ieee-computer-society-enis-student-chapter"
-                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+    <div
+      id="contact"
+      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h1 class="text-white mb-4">IEEE ENIS CS SBC</h1>
+            <span
+              >The IEEE Computer Society has built a strong reputation for its
+              advocacy of computer science and engineering. At the National
+              School of Engineering of Sfax, the Enis Student Branch Chapter was
+              founded on January 27, 2010, with a clear mission: to equip its
+              members with vital Information Technology knowledge, thus
+              enhancing their career prospects and honing their abilities. By
+              organizing enriching programs and fostering valuable networking
+              connections, the chapter empowers ambitious individuals to thrive
+              amidst the constantly changing technology domain.</span
+            >
+          </div>
+          <div class="col-md-6">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1859442139585!2d10.717743795979837!3d34.72570711270346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13002ca4425ed6a1%3A0x1cb1842d2707fe25!2sNational%20Engineering%20School%20of%20Sfax!5e0!3m2!1sen!2sus!4v1690050981300!5m2!1sen!2sus"
+                width="100%"
+                height="250"
+                style="border: 0; border-radius: 23px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Get In Touch</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>Route Soukra km 3 B.P.
+              1173. Sfax. 3038, Tunisia
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>28 675 568</p>
+            <p><i class="fa fa-envelope me-3"></i>mahdi.bradai21@ieee.org</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">About us</h5>
+            <a class="btn btn-link" href="#about">History</a>
+            <a class="btn btn-link" href="#number">Statistics</a>
+            <a class="btn btn-link" href="#feature">Main Goals</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="#carousel">Home</a>
+            <a class="btn btn-link" href="#team">Teams</a>
+            <a class="btn btn-link" href="#projects">Activities</a>
+            <a class="btn btn-link" href="#testimonial">Previous Experiences</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Follow Us</h5>
+            <div class="d-flex">
+              <a
+                class="btn btn-square rounded-circle me-3"
+                href="https://www.facebook.com/CSENISsbc"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square rounded-circle me-3"
+                href="https://www.instagram.com/ieee_cs_enis_sc/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR2MvVhhoqBj-3Tm30cab1kns3llZHDY_K64E78htmQgfOYT4AulMcrTuGQ"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square rounded-circle me-3"
+                href="https://tn.linkedin.com/company/ieee-computer-society-enis-student-chapter"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        Copyright &copy; <span id="currentYear"></span> all rights reserved.
-                    </div>
-                    <!-- <div class="col-md-6 text-center text-md-end">
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              Copyright &copy; <span id="currentYear"></span> all rights
+              reserved.
+            </div>
+            <!-- <div class="col-md-6 text-center text-md-end">
                         Designed with <i class="fa fa-heart" style="color: #d60505;"></i> By Oussama Slimani.
                     </div> -->
-                    <div class="col-md-6 text-center text-md-end">
-                        Designed By IEEE CS ENIS SBC.
-                    </div>
-                </div>
+            <div class="col-md-6 text-center text-md-end">
+              Designed By IEEE CS ENIS SBC.
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
-        <i class="bi bi-arrow-up"></i>
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
     </a>
 
     <!-- JavaScript Libraries -->
@@ -1575,6 +2333,5 @@
     <script src="lib/parallax/parallax.min.js"></script>
     <!-- Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
