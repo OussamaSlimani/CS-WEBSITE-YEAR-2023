@@ -623,7 +623,7 @@
   width: 100px;
   padding: 15px 0;
   background: rgba(255, 255, 255, 0.12);
-  border-top: 5px solid #ff0000;
+  border-top: 5px solid var(--primary);
 }
 
 #header .countdown div h3 {
