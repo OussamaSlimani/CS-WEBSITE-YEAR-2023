@@ -162,3 +162,47 @@ document.addEventListener("DOMContentLoaded", function () {
   updateActiveNavLink();
   window.addEventListener("scroll", updateActiveNavLink);
 });
+
+// i protect
+function calculateTimeDifference(targetDate) {
+  const targetDateTime = new Date(targetDate);
+  const currentDate = new Date();
+  const timeDifference = Math.abs(targetDateTime - currentDate);
+
+  if (timeDifference === 0) {
+    return {
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+    };
+  }
+
+  const seconds = Math.floor(timeDifference / 1000) % 60;
+  const minutes = Math.floor(timeDifference / (1000 * 60)) % 60;
+  const hours = Math.floor(timeDifference / (1000 * 60 * 60)) % 24;
+  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+  return {
+    days,
+    hours,
+    minutes,
+    seconds,
+  };
+}
+
+function updateTimeInterval() {
+  const targetDate = "2023-12-22T09:00:00Z"; // December 22, 2023, 9:00 AM
+  const { days, hours, minutes, seconds } = calculateTimeDifference(targetDate);
+
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = hours;
+  document.getElementById("minutes").textContent = minutes;
+  document.getElementById("seconds").textContent = seconds;
+}
+
+// Update the time difference initially
+updateTimeInterval();
+
+// Update the time difference every second
+setInterval(updateTimeInterval, 1000);
