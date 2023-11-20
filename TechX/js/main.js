@@ -131,3 +131,6 @@ updateTimeInterval();
 
 // Update the time difference every second
 setInterval(updateTimeInterval, 1000);
+
+// Get Year
+document.getElementById("currentYear").textContent = new Date().getFullYear();

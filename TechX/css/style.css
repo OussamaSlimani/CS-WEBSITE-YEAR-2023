@@ -1,10 +1,14 @@
 /********** Template CSS **********/
 :root {
-  --primary: #355efc;
-  --secondary: #e93c05;
+  --primary: #712a95;
+  --secondary: #72a2d8;
   --tertiary: #555555;
   --light: #dfe4fd;
   --dark: #011a41;
+}
+
+.gradient-background {
+  background: linear-gradient(to right, #712a95, #72a2d8);
 }
 
 .back-to-top {
@@ -13,6 +17,22 @@
   right: 30px;
   bottom: 30px;
   z-index: 99;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scaling-image {
+  animation: scaleAnimation 3s infinite;
 }
 
 h1,
@@ -408,33 +428,10 @@ h6,
   transition: 0.5s;
 }
 
-.team-item:hover img {
-  top: -30px;
-}
-
 .team-item .team-text {
   position: relative;
   height: 100px;
   transition: 0.5s;
-}
-
-.team-item:hover .team-text {
-  margin-top: -60px;
-  height: 160px;
-}
-
-.team-item .team-text .team-social {
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.team-item:hover .team-text .team-social {
-  opacity: 1;
-}
-
-.team-item .team-social .btn-primary {
-  display: inline-flex;
-  border-radius: 40px;
 }
 
 .testimonial-item .testimonial-text::before {
@@ -822,4 +819,38 @@ h6,
 #header .subscribe {
   font-size: 15px;
   text-align: center;
+}
+
+/*** About ***/
+.about-container {
+  border-radius: 20px;
+}
+.about-img img {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.about-container-r {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.about-img-r img {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .about-container {
+    border-radius: 20px;
+  }
+  .about-img img {
+    border-radius: 20px;
+  }
+
+  .about-container-r {
+    border-radius: 20px;
+  }
+  .about-img-r img {
+    border-radius: 20px;
+  }
 }
