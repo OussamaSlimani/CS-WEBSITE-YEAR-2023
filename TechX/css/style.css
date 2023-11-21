@@ -400,12 +400,11 @@ h6,
 
 .footer .btn.btn-square {
   color: #7f8499;
-  border: 1px solid #7f8499;
+  border: 1px solid #ffffff;
 }
 
 .footer .btn.btn-square:hover {
-  color: var(--light);
-  border-color: var(--primary);
+  transform: scale(1.08);
 }
 
 .footer .copyright {
