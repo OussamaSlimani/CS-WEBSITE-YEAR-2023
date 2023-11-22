@@ -134,3 +134,34 @@ setInterval(updateTimeInterval, 1000);
 
 // Get Year
 document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+// Scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const sections = document.querySelectorAll("div[id]");
+  function updateActiveNavLink() {
+    const currentScrollPos = window.scrollY;
+    let currentSection;
+    for (const section of sections) {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (currentScrollPos > sectionTop && currentScrollPos < sectionBottom) {
+        currentSection = section;
+        break;
+      }
+    }
+    if (currentSection) {
+      const sectionId = currentSection.getAttribute("id");
+      for (const link of navLinks) {
+        if (link.getAttribute("href") === `#${sectionId}`) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      }
+    }
+  }
+  updateActiveNavLink();
+  window.addEventListener("scroll", updateActiveNavLink);
+});

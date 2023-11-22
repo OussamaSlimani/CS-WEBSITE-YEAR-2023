@@ -138,6 +138,7 @@ h6,
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
   color: var(--primary);
+  font-weight: bold;
 }
 
 @media (max-width: 991.98px) {
@@ -463,11 +464,9 @@ h6,
 .testimonial-carousel .owl-dot {
   position: relative;
   display: inline-block;
-  margin: 0 5px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid var(--light);
-  border-radius: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   transition: 0.5s;
 }
 
@@ -489,45 +488,6 @@ h6,
 
 .testimonial-carousel .owl-dot.active::after {
   background: var(--primary);
-}
-
-/*** Collaborators ***/
-.CollaboratorsLogo {
-  padding: 12px;
-  margin: 5px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
-  border: 0.25px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  width: 220px;
-  height: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.CollaboratorsLogo img {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-.CollaboratorsLogo img:hover {
-  opacity: 1;
-}
-.Logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media (max-width: 991px) {
-  .CollaboratorsLogo {
-    width: 180px;
-    height: 180px;
-  }
-}
-@media (max-width: 768px) {
-  .CollaboratorsLogo {
-    width: 140px;
-    height: 140px;
-  }
 }
 
 /*** Speaker ***/
@@ -737,37 +697,16 @@ h6,
   margin-bottom: 0;
 }
 
-/*** Values ***/
-.values .box {
-  padding: 30px;
+/*** Sponsoring ***/
+.spon-img {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
   text-align: center;
   transition: 0.3s;
-  height: 100%;
-}
-
-.values .box img {
-  padding: 30px 50px;
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-
-.values .box h3 {
-  font-size: 24px;
-  color: var(--dark);
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-
-.values .box:hover {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-}
-
-.values .box:hover img {
-  transform: scale(1);
-}
-.section-header h2 {
-  color: var(--primary);
+  height: 100px;
 }
 
 /*--------------------------------------------------------------
