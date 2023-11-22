@@ -476,8 +476,8 @@ h6,
   content: "";
   width: 16px;
   height: 16px;
-  top: 5px;
-  left: 5px;
+  top: 6px;
+  left: 6px;
   border-radius: 16px;
   background: var(--light);
   transition: 0.5s;
@@ -798,18 +798,13 @@ h6,
 }
 
 @media (max-width: 575px) {
+  #header {
+    justify-content: center;
+  }
   #header .countdown div {
     width: 70px;
     padding: 5px 0;
     margin: 10px 8px;
-  }
-  #header {
-    justify-content: center;
-    padding: 0;
-  }
-
-  .image-animation {
-    display: none;
   }
 
   #header .countdown div h3 {
