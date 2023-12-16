@@ -163,13 +163,14 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateActiveNavLink);
 });
 
+/* ************* Coming soon...  *************** */
 // i protect
 function calculateTimeDifference(targetDate) {
   const targetDateTime = new Date(targetDate);
   const currentDate = new Date();
-  const timeDifference = Math.abs(targetDateTime - currentDate);
+  const timeDifference = targetDateTime - currentDate;
 
-  if (timeDifference === 0) {
+  if (timeDifference < 0) {
     return {
       days: 0,
       hours: 0,
@@ -192,7 +193,7 @@ function calculateTimeDifference(targetDate) {
 }
 
 function updateTimeInterval() {
-  const targetDate = "2023-12-06T13:00:00Z"; // December 9, 2023, 1:00 PM
+  const targetDate = "2023-12-22T09:00:00Z"; // December 22, 2023, 9:00 AM
   const { days, hours, minutes, seconds } = calculateTimeDifference(targetDate);
 
   document.getElementById("days").textContent = days;
@@ -206,3 +207,7 @@ updateTimeInterval();
 
 // Update the time difference every second
 setInterval(updateTimeInterval, 1000);
+
+// Get Year
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+/* ************* Coming soon...  *************** */

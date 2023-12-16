@@ -88,9 +88,11 @@
   });
 })(jQuery);
 
-// Coming soon...
+/* ************* Coming soon...  *************** */
 function calculateTimeDifference(targetDate) {
   const targetDateTime = new Date(targetDate);
+  targetDateTime.setHours(14, 0, 0, 0); // Set the target time to 14:00:00
+
   const currentDate = new Date();
   const timeDifference = Math.abs(targetDateTime - currentDate);
 
@@ -117,7 +119,7 @@ function calculateTimeDifference(targetDate) {
 }
 
 function updateTimeInterval() {
-  const targetDate = "2023-12-06T13:00:00Z"; // December 9, 2023, 1:00 PM
+  const targetDate = "2023-12-09T14:00:00Z"; // December 9, 2023, 2:00 PM
   const { days, hours, minutes, seconds } = calculateTimeDifference(targetDate);
 
   document.getElementById("days").textContent = days;
@@ -134,6 +136,7 @@ setInterval(updateTimeInterval, 1000);
 
 // Get Year
 document.getElementById("currentYear").textContent = new Date().getFullYear();
+/* ************* Coming soon...  *************** */
 
 // Scroll
 document.addEventListener("DOMContentLoaded", function () {

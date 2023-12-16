@@ -11,6 +11,10 @@
   background: linear-gradient(to right, #712a95, #72a2d8);
 }
 
+.yet-containe {
+  border-radius: 10px;
+}
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -516,38 +520,6 @@ h6,
   height: 100%;
   width: 100%;
   z-index: 1;
-}
-
-.Speaker .member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: var(--light);
-  z-index: 2;
-}
-
-.Speaker .member .social a {
-  transition: color 0.3s;
-  color: var(--primary);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-
-.Speaker .member .social a:hover {
-  color: var(--dark);
-}
-
-.Speaker .member .social i {
-  font-size: 18px;
-}
-
-.Speaker .member .member-info {
-  padding: 10px 0px 0px 5px;
 }
 
 .Speaker .member .member-info h4 {

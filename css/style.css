@@ -47,6 +47,14 @@
   );
 }
 
+.gradient-background {
+  background: linear-gradient(to right, #712a95, #72a2d8);
+  border-radius: 15px;
+}
+
+.portfolio-container {
+  justify-content: start;
+}
 /*** Spinner ***/
 #spinner {
   opacity: 0;
